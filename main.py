@@ -171,8 +171,13 @@ try:
 except Exception as e:
     print('nao apareceu a tela de grupo')
     print(f"Erro: {e}")
+    entrar = driver.find_elements(By.XPATH, '/html/body/ld-root/ng-component/pro-session-settings/pro-page-background/div/div/div[1]/div/form/div/div[3]/po-button[2]/button')
+    for btn in entrar:
+        if 'Entrar' in btn.text:
+            btn.click()
+            break    
     
-    
+sleep(15)
 #
 #GRAPH - OBTENDO CÓDIGO MFA 
 #

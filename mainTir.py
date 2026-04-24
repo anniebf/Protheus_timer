@@ -1,7 +1,7 @@
 import unittest
 from testecase import teste1
 import time
-import os
+import LogBanco
 import sys
 from time import sleep
 
@@ -43,3 +43,4 @@ finally:
     sleep(5)
     
     # Agora chama a função salvar
+    LogBanco.salvar()
