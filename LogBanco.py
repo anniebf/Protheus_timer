@@ -15,7 +15,7 @@ def get_latest_log_file(log_folder='log', log_prefix='log'):
     return log_files[0] if log_files else None
 
 load_dotenv()
-username = os.getenv('username')
+username = os.getenv('usernamedb')
 password = os.getenv('password')
 dsn = os.getenv('dsn')
 usuario = os.getenv('usuario')
